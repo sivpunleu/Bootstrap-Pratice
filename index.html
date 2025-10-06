@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="asset/css/style.css" />
+  <link rel="stylesheet" href="asset/css/theme.css">
+  <link rel="stylesheet" href="asset/bootstrap-5.3.7/css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <title>Document</title>
+  <style>
+    .icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+    }
+    .service-card:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service-card:hover .icon {
+      background-color: rgb(101, 197, 238);
+      transform: scale(0.5s);
+    }
+
+    .service-card:hover .i2 {
+      background-color: rgb(29, 201, 10);
+      transform: scale(0.5s);
+    }
+
+    .service-card:hover .i3 {
+      background-color: rgb(187, 211, 222);
+      transform: scale(0.5s);
+    }
+
+    .service-card:hover .i4 {
+      background-color: rgb(164, 152, 172);
+      transform: scale(0.5s);
+    }
+
+    .service-card:hover .i5 {
+      background-color: rgb(238, 174, 101);
+      transform: scale(0.5s);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header position-sticky top-0 w-100" style="z-index: 1000;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand" href="#">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV3h6n7EcgQQcFugVp9jyjCrYryADr8xE3NA&s"
+            alt="Logo" class="img-fluid" style="width: 70px; height: 70px;" />
+          <span class="fw-bold fs-4 text-dark">Bu Liang Ren</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav  ms-auto g-3 gap-1">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <button class="btn btn-primary rounded-pill">Book Appointment</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-section d-flex align-items-center justify-content-center text-center py-10 gradient-bg">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-6 col-md-10 mx-auto ">
+            <h1 class="display-4 fw-bold mb-3">Welcome to Bu Liang Ren</h1>
+            <p class="lead mb-4 fst-italic">Your trusted partner for quality services. Lorem ipsum dolor sit amet
+              consectetur
+              adipisicing elit. Earum amet at pariatur laborum excepturi molestiae reprehenderit nulla dolor, ducimus
+              esse, animi inventore? Delectus, omnis laudantium. Praesentium ratione saepe perferendis sed!</p>
+            <button class="btn btn-lg btn-light rounded-pill book gy-3">Book Appointment</button>
+            <a href="#" class="btn btn-outline-light btn-lg rounded-pill gy-3">Learn More</a>
+          </div>
+          <div class="col-lg-6 col-md-6 text-center mt-4 mt-lg-0">
+            <div class="glass-card p-5 mx-auto">
+              <div class="row g-4">
+                <div class="col-6 stat-block">
+                  <div class="stat-number">15+</div>
+                  <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="col-6 stat-block">
+                  <div class="stat-number">50+</div>
+                  <div class="stat-label">Expert Doctors</div>
+                </div>
+                <div class="col-6 stat-block">
+                  <div class="stat-number">10k+</div>
+                  <div class="stat-label">Happy Patients</div>
+                </div>
+                <div class="col-6 stat-block">
+                  <div class="stat-number">24/7</div>
+                  <div class="stat-label">Emergency Care</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container my-5">
+        <h2 class="fw-bold text-center text-dark">Our Medical Services</h2>
+        <p class="text-muted text-center fs-5">Comprehensive healthcare services designed to meet all your medical needs
+          with
+          the highest standards of care.
+        </p>
+        <div class="row mb-4">
+          <div class="col-lg-4 col-md-6 mb-4 text-center">
+            <div class="card h-100 service-card border-0">
+              <div class="card-body">
+                <div class="icon d-flex align-items-center justify-content-center mb-3 ">
+                  <!-- people icon -->
+                  <i class="bi bi-people-fill fs-2 text-primary"></i>
+                </div>
+                <h5 class="card-title">General Consultation</h5>
+                <p class="card-text text-black">Comprehensive health checkups and consultations with our experienced
+                  physicians for all your healthcare needs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 text-center">
+            <div class="card h-100 service-card border-0">
+              <div class="card-body">
+                <div class="icon i2 d-flex align-items-center justify-content-center mb-3 ">
+                  <!-- ambulance icon -->
+                  <i class="bi bi-exclamation-diamond-fill fs-2 text-primary"></i>
+                </div>
+                <h5 class="card-title">Emergency Care</h5>
+                <p class="card-text text-black">24/7 emergency medical services with rapid response times and
+                  state-of-the-art emergency equipment.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 text-center">
+            <div class="card h-100 service-card border-0">
+              <div class="card-body">
+                <div class="icon i3 d-flex align-items-center justify-content-center mb-3 ">
+                  <!-- hover background icon -->
+                  <i class="bi bi-flower1 fs-2 text-primary"></i>
+                </div>
+                <h5 class="card-title">Lab Testing</h5>
+                <p class="card-text text-black">Comprehensive lab testing services to diagnose and monitor your health
+                  conditions effectively.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 text-center">
+            <div class="card h-100 service-card border-0">
+              <div class="card-body">
+                <div class="icon i4 d-flex align-items-center justify-content-center mb-3 ">
+                  <!-- hover background icon -->
+                  <i class="bi bi-flower1 fs-2 text-primary"></i>
+                </div>
+                <h5 class="card-title">Cardiology</h5>
+                <p class="card-text text-black">Comprehensive cardiology services, including diagnostics, treatment, and
+                  management of heart conditions.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 text-center">
+            <div class="card h-100 service-card border-0">
+              <div class="card-body">
+                <div class="icon i4 d-flex align-items-center justify-content-center mb-3 ">
+                  <!-- hover background icon -->
+                  <i class="bi bi-gem fs-2 text-primary"></i>
+                </div>
+                <h5 class="card-title">Radiology</h5>
+                <p class="card-text text-black">Comprehensive radiology services, including X-rays, MRIs, and CT scans,
+                  to diagnose and monitor your health conditions effectively.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 text-center">
+            <div class="card h-100 service-card border-0">
+              <div class="card-body">
+                <div class="icon i5 d-flex align-items-center justify-content-center mb-3 ">
+                  <!-- hover background icon -->
+                  <i class="bi bi-heart-pulse-fill fs-2 text-primary"></i>
+                </div>
+                <h5 class="card-title">Surgery</h5>
+                <p class="card-text text-black">Comprehensive surgical services, including minimally invasive procedures
+                  and advanced surgical techniques.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2 class="text-center text-dark fw-bold">What Our Patients Say</h2>
+        <p class="text-center lead text-dark">Real experiences from our valued patients</p>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card card h-100 border-0 shadow-sm p-4">
+              <div class="mb-2">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <div class="card-body p-0">
+                <p class="testimonial-text text-dark fst-italic">"Exceptional care and attention to detail. Dr. Johnson and the entire team made me feel comfortable throughout my treatment. Highly recommend!"</p>
+                <div class="d-flex align-items-center mt-4">
+                  <div class="testimonial-avatar d-flex align-items-center justify-content-center me-3">
+                    <i class="bi bi-person fs-3 text-info"></i>
+                  </div>
+                  <div>
+                    <div class="fw-bold text-dark">Sarah Johnson</div>
+                    <div class="text-muted small">Patient</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card card h-100 border-0 shadow-sm p-4">
+              <div class="mb-2">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <div class="card-body p-0">
+                <p class="testimonial-text text-dark fst-italic">"The emergency care team saved my life. Professional, quick, and compassionate. I'm grateful for their expertise and dedication."</p>
+                <div class="d-flex align-items-center mt-4">
+                  <div class="testimonial-avatar d-flex align-items-center justify-content-center me-3">
+                    <i class="bi bi-person fs-3 text-info"></i>
+                  </div>
+                  <div>
+                    <div class="fw-bold text-dark">Michael Chen</div>
+                    <div class="text-muted small">Patient</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card card h-100 border-0 shadow-sm p-4">
+              <div class="mb-2">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <div class="card-body p-0">
+                <p class="testimonial-text text-dark fst-italic">"Outstanding service from appointment booking to treatment. The staff is friendly and the facilities are modern and clean."</p>
+                <div class="d-flex align-items-center mt-4">
+                  <div class="testimonial-avatar d-flex align-items-center justify-content-center me-3">
+                    <i class="bi bi-person fs-3 text-info"></i>
+                  </div>
+                  <div>
+                    <div class="fw-bold text-dark">Emily Rodriguez</div>
+                    <div class="text-muted small">Patient</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <section class="cta-section py-5" style="background: #2563eb;">
+        <div class="container text-center py-5">
+          <h2 class="fw-bold text-white mb-3 text-center" style="font-size:2.5rem;">Ready to Take Care of Your Health?</h2>
+          <p class="lead text-white mb-4 text-center">Don't wait to get the healthcare you deserve. Schedule your appointment today and experience the difference.</p>
+          <a href="#" class="btn btn-light btn-lg rounded-pill px-5 fw-semibold cta-btn">Schedule Your Appointment</a>
+        </div>
+      </section>
+      <footer class="footer-section pt-5 pb-3" style="background: #181f2c; color: #fff;">
+        <div class="container">
+          <div class="row gy-4 align-items-start">
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+              <div class="d-flex align-items-center mb-2">
+                <span class="d-inline-flex align-items-center justify-content-center me-2" style="width:40px;height:40px;background:#2563eb;border-radius:10px;">
+                  <i class="bi bi-heart fs-4 text-white"></i>
+                </span>
+                <span class="fw-bold fs-4">HealthCare Plus</span>
+              </div>
+              <p class="mb-3" style="color:#cbd5e1;">Providing exceptional healthcare services with compassionate care and cutting-edge medical technology. Your health is our priority.</p>
+              <div>
+                <a href="#" class="me-2 text-white-50"><i class="bi bi-twitter fs-5"></i></a>
+                <a href="#" class="me-2 text-white-50"><i class="bi bi-twitter-x fs-5"></i></a>
+                <a href="#" class="me-2 text-white-50"><i class="bi bi-linkedin fs-5"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+              <h5 class="fw-bold mb-3">Quick Links</h5>
+              <ul class="list-unstyled" style="color:#cbd5e1;">
+                <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">About Us</a></li>
+                <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">Our Services</a></li>
+                <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">Contact</a></li>
+                <li><a href="#" class="text-decoration-none text-white-50">Patient Portal</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <h5 class="fw-bold mb-3">Contact Info</h5>
+              <ul class="list-unstyled" style="color:#cbd5e1;">
+                <li class="mb-2"><i class="bi bi-telephone me-2"></i>855+ 969596217</li>
+                <li class="mb-2"><i class="bi bi-envelope me-2"></i>sivpunleu@gmail.com</li>
+                <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>123 Medical Center Dr, Health City, HC 18345</li>
+              </ul>
+            </div>
+          </div>
+          <hr class="my-4" style="border-color:#334155;" />
+          <div class="text-center" style="color:#94a3b8;">© 2025 HealthCare Plus. All rights reserved.</div>
+        </div>
+      </footer>
+    </section>
+  </main>
+</body>
+<script src="asset/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
+
+
+</html>
